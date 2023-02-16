@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +10,36 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 	<title>Scandi</title>
 </head>
+
 <body>
-	
-	<header class="container">
-		
-			<nav class="stroke">
-				<ul class="menu-list">
-					<li class="menu-item"><a href="#" class="menu-link">SCANDI</a></li>
-					<li class="menu-item"><a href="#about_us" class="menu-link">О компании</a></li>
-					<li class="menu-item"><a href="#portfolio" class="menu-link">Портфолио</a></li>
-					<li class="menu-item"><a href="#team" class="menu-link">Команда</a></li>
-					<li class="menu-item"><a href="#how_to_work" class="menu-link">Как мы работаем</a></li>
-					<li class="menu-item"><a href="#reviews" class="menu-link">Отзывы клиентов</a></li>
-					<li class="menu-item"><a href="#call_me" class="menu-link">Оставить заявку</a></li>
-					<li class="menu-item menu-link">+7 (981) 857-46-24</li>
+
+	<header class="container-header">
+
+		<div class="header-wrp">
+
+			<nav class="menu stroke">
+				<input id="menu__toggle" type="checkbox" />
+				<label class="menu__btn" for="menu__toggle">
+					<span></span>
+				</label>
+				<div class="logo logo__text menu-link"><a href="#" class="menu-link">SCANDI</a></div>
+				<ul class="menu__list">
+					<li class="menu__item"><a href="#about_us" class="menu-link">О компании</a></li>
+					<li class="menu__item"><a href="#portfolio" class="menu-link">Портфолио</a></li>
+					<li class="menu__item"><a href="#team" class="menu-link">Команда</a></li>
+					<li class="menu__item"><a href="#how_to_work" class="menu-link">Как мы работаем</a></li>
+					<li class="menu__item"><a href="#reviews" class="menu-link">Отзывы клиентов</a></li>
+					<li class="menu__item"><a href="#call_me" class="menu-link">Оставить заявку</a></li>
+					<li class="menu__item"><a href="tel:+79818574624" class="menu-link">+7 (981) 857-46-24</a></li>
 				</ul>
 			</nav>
-		
+
+		</div>
+
 		<div class="header-wrapper">
 			<p class="header-title">Поможем сделать <br> вашу квартиру <br> уютнее</p>
-			<p class="header-text">Подбираем текстиль, мебель и аксессуары <br> под ваш интерьер, находим магазины <br> и помогаем организовать доставку
+			<p class="header-text">Подбираем текстиль, мебель и аксессуары <br> под ваш интерьер, находим магазины <br>
+				и помогаем организовать доставку
 			</p>
 			<button class="button">Оставить заявку</button>
 		</div>
@@ -36,91 +47,106 @@
 	</header>
 
 	<main class="container-content">
-		
-		<section class="about" id="about_us">
-			<div class="about-wrapper">
-				<h2 class="title">О нас</h2>
-				<img src="img/vase_glasses.jpg" alt="ваза и бокалы" class="about-img">
-				<div class="about-text-wrapper">
-					<p class="about-text">Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то,  что по-настоящему вдохновляет дизайнеров нашей студии. 
-					</p>
-					<p class="about-text">Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: « Да! Это именно то, что действительно достойно моего дома!»
-					</p>
-				</div>
+
+		<section class="about about__wrapper" id="about_us">
+			<h2 class="title about__title">О нас</h2>
+			<div class="about__img-wrp">
+				<img src="img/vase_glasses.jpg" alt="ваза и бокалы" class="about__img">
+			</div>
+			<div class="about__text-wrapper">
+				<p class="about__text">Премиальный европейский текстиль — одно из самых главных направлений работы
+					коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание
+					мельчайшим деталям — вот то, что по-настоящему вдохновляет дизайнеров нашей студии.
+				</p>
+				<p class="about__text">Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно
+					сказать: « Да! Это именно то, что действительно достойно моего дома!»
+				</p>
 			</div>
 		</section>
 
 		<section class="bullets">
-			<ul class="bullets-list">
-				<li class="bullets-item"><span class="bullets-item-number">5</span> <br> лет опыта</li>
-				<li class="bullets-item"><span class="bullets-item-number">100</span> <br> проектов</li>
-				<li class="bullets-item"><span class="bullets-item-number">10</span> <br> наград</li>
+			<ul class="bullets__list">
+				<li class="bullets__item"><span class="bullets__item-number">5</span> <br> лет опыта</li>
+				<li class="bullets__item"><span class="bullets__item-number">100</span> <br> проектов</li>
+				<li class="bullets__item"><span class="bullets__item-number">10</span> <br> наград</li>
 			</ul>
 		</section>
 
 		<section class="portfolio" id="portfolio">
-			<h2 class="title portfolio-title">Наши работы</h2>
-			<ul class="portfolio-list">
-				<li class="portfolio-item cover">
-					<!-- <img src="img/bedroom.jpg" alt="bedroom"> -->
-					<div class="portfolio-text-cover-wrapper">
-						<p class="portfolio-title-cover">Квартира-студия 30 кв.м.</p>
-						<p class="portfolio-text-cover">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+			<h2 class="title portfolio__title">Наши работы</h2>
+			<ul class="portfolio__list">
+				<li class="portfolio__item portfolio__cover">
+					<div class="portfolio__cover-wrapper">
+						<p class="portfolio__cover-title">Квартира-студия 30 кв.м.</p>
+						<p class="portfolio__cover-text">В квартире были светлые стены и тёплые цвета. Мы
+							сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к
+							виллам островов Бали.</p>
 					</div>
 				</li>
-				<li class="portfolio-item">
-					<img src="img/kitchen.jpg" alt="kitchen">
+				<li class="portfolio__item portfolio__item--wide">
+					<img class="portfolio__item-pic" src="img/kitchen.jpg" alt="kitchen">
 				</li>
-				<li class="portfolio-item">
-					<img src="img/living room.jpg" alt="living room">
+				<li class="portfolio__item portfolio__item--wide">
+					<img class="portfolio__item-pic" src="img/living room.jpg" alt="living room">
 				</li>
-				<li class="portfolio-item"><img src="img/bathtub.jpg" alt="bathtub"></li>
+				<li class="portfolio__item"><img class="portfolio__item-pic" src="img/bathtub.jpg" alt="bathtub"></li>
 			</ul>
-			<a href="#" class="portfolio-link">Смотреть еще
-				<svg class="portfolio-link-arrow" width="61" height="16" viewBox="0 0 61 16" fill="none"><path d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z"/>
+			<a href="#" class="portfolio__link">Смотреть еще
+				<svg class="portfolio__link-arrow" width="61" height="16" viewBox="0 0 61 16" fill="none">
+					<path
+						d="M60.7071 8.70711C61.0976 8.31658 61.0976 7.68342 60.7071 7.29289L54.3432 0.928932C53.9526 0.538408 53.3195 0.538408 52.9289 0.928932C52.5384 1.31946 52.5384 1.95262 52.9289 2.34315L58.5858 8L52.9289 13.6569C52.5384 14.0474 52.5384 14.6805 52.9289 15.0711C53.3195 15.4616 53.9526 15.4616 54.3432 15.0711L60.7071 8.70711ZM0 9H60V7H0V9Z" />
 				</svg>
 			</a>
 		</section>
 
 		<section class="team" id="team">
 			<h2 class="title">Команда</h2>
-			<ul class="team-list">
-				<li class="team-item">
+			<ul class="team__list">
+				<li class="team__item">
 					<img src="img/woman_red_hair.jpg" alt="woman_red_hair">
-					<p class="team-item-text">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.
+					<p class="item-text">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает
+						к
+						вам домой, общается и помогает сделать вашу квартиру красивой и уютной.
 					</p>
 				</li>
-				<li class="team-item">
+				<li class="team__item">
 					<img src="img/woman_blonde_short_hair.jpg" alt="woman_blonde_short_hair">
-					<p class="team-item-text">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы и ответит на все вопросы.
+					<p class="item-text">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она
+						проконсультирует вас, соберёт все документы и ответит на все вопросы.
 					</p>
 				</li>
-				<li class="team-item">
+				<li class="team__item">
 					<img src="img/woman_blonde_hair.jpg" alt="woman_blonde_hair">
-					<p class="team-item-text">Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обсутроить дом так, чтобы вам понравилось.
+					<p class="item-text">Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами
+						и
+						точно знает, как обсутроить дом так, чтобы вам понравилось.
 					</p>
 				</li>
 			</ul>
 			<h3 class="title" id="how_to_work">Как мы работаем</h3>
-			<ul class="work-list">
-				<li class="work-item">
+			<ul class="work__list">
+				<li class="work__item">
 					<div class="number-circle">1</div>
-					<p class="team-item-text work-item-text">Знакомимся, выезжаем на объект, утверждаем концепцию, подписывем договор.
+					<p class="item-text work__item-text">Знакомимся, выезжаем на объект, утверждаем концепцию,
+						подписывем договор.
 					</p>
 				</li>
-				<li class="work-item">
+				<li class="work__item">
 					<div class="number-circle">2</div>
-					<p class="team-item-text work-item-text">Подбираем мебель, текстиль, аксессуры. Делаем 3D-зуализацию.
+					<p class="item-text work__item-text">Подбираем мебель, текстиль, аксессуры. Делаем
+						3D-зуализацию.
 					</p>
 				</li>
-				<li class="work-item">
+				<li class="work__item">
 					<div class="number-circle">3</div>
-					<p class="team-item-text work-item-text">Находим нужные магазины, помогаем с доставкой и оплатой товаров.
+					<p class="item-text work__item-text">Находим нужные магазины, помогаем с доставкой и оплатой
+						товаров.
 					</p>
 				</li>
-				<li class="work-item">
+				<li class="work__item">
 					<div class="number-circle">4</div>
-					<p class="team-item-text work-item-text">Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей
+					<p class="item-text work__item-text">Воплощаем проект в жизнь: расставляем мебель и цветы,
+						вешаем шторы, находим места для мелочей
 					</p>
 				</li>
 			</ul>
@@ -129,31 +155,43 @@
 		<section class="reviews" id="reviews">
 			<h2 class="title">Отзывы</h2>
 			<div class="reviews-wrapper">
-				<div class="arrow-left">
+				<div class="arrow__left">
 					<a href="#">
-						<svg class="reviews-arrow" width="72" height="72" viewBox="0 0 72 72" fill="none"><circle r="36" transform="matrix(-1 0 0 1 36 36)" fill="#CC8B86"/><path d="M19.2929 36.7071C18.9024 36.3166 18.9024 35.6834 19.2929 35.2929L25.6569 28.9289C26.0474 28.5384 26.6805 28.5384 27.0711 28.9289C27.4616 29.3195 27.4616 29.9526 27.0711 30.3431L21.4142 36L27.0711 41.6569C27.4616 42.0474 27.4616 42.6805 27.0711 43.0711C26.6805 43.4616 26.0474 43.4616 25.6569 43.0711L19.2929 36.7071ZM52 37H20V35H52V37Z"/>
+						<svg class="reviews-arrow" width="72" height="72" viewBox="0 0 72 72" fill="none">
+							<circle r="36" transform="matrix(-1 0 0 1 36 36)" fill="#CC8B86" />
+							<path
+								d="M19.2929 36.7071C18.9024 36.3166 18.9024 35.6834 19.2929 35.2929L25.6569 28.9289C26.0474 28.5384 26.6805 28.5384 27.0711 28.9289C27.4616 29.3195 27.4616 29.9526 27.0711 30.3431L21.4142 36L27.0711 41.6569C27.4616 42.0474 27.4616 42.6805 27.0711 43.0711C26.6805 43.4616 26.0474 43.4616 25.6569 43.0711L19.2929 36.7071ZM52 37H20V35H52V37Z" />
 						</svg>
 					</a>
 				</div>
-				<div class="reviews-content">
-					<p class="reviews-text">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
-					</p>
-					<p class="reviews-text">Работа шла быстро, было очень приятно общаться и взаимодествовайть с сотрудниками. Не ожидала, что это будет так легко!
-					</p>
-					<p class="reviews-text">Буду советовать и своим друзьям к вам обращаться!»</p>
-					<p class="reviews-text">АННА БЕЛОВСКАЯ</p>
+				<div class="reviews__content">
+					<div class="reviews__text-wrapper">
+						<p class="reviews__content-text">«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала
+							вашу студию
+							для украшения своего дома.
+						</p>
+						<p class="reviews__content-text">Работа шла быстро, было очень приятно общаться и
+							взаимодествовайть с
+							сотрудниками. Не ожидала, что это будет так легко!
+						</p>
+						<p class="reviews__content-text">Буду советовать и своим друзьям к вам обращаться!»</p>
+						<p class="reviews__content-text">АННА БЕЛОВСКАЯ</p>
+					</div>
+					<ul class="reviews__list">
+						<li class="reviews__item">
+							<img src="img/review_living_room.jpg" alt="living_room">
+						</li>
+						<li class="reviews__item">
+							<img src="img/review_kitchen.jpg" alt="kitchen">
+						</li>
+					</ul>
 				</div>
-				<ul class="reviews-list">
-					<li class="reviews-item">
-						<img src="img/review_living_room.jpg" alt="living_room">
-					</li>
-					<li class="reviews-item">
-						<img src="img/review_kitchen.jpg" alt="kitchen">
-					</li>
-				</ul>
-				<div class="arrow-right">
+				<div class="arrow__right">
 					<a href="#">
-						<svg class="reviews-arrow" width="72" height="72" viewBox="0 0 72 72" fill="none"><circle cx="36" cy="36" r="36" fill="#CC8B86"/><path d="M52.7071 36.7071C53.0976 36.3166 53.0976 35.6834 52.7071 35.2929L46.3431 28.9289C45.9526 28.5384 45.3195 28.5384 44.9289 28.9289C44.5384 29.3195 44.5384 29.9526 44.9289 30.3431L50.5858 36L44.9289 41.6569C44.5384 42.0474 44.5384 42.6805 44.9289 43.0711C45.3195 43.4616 45.9526 43.4616 46.3431 43.0711L52.7071 36.7071ZM20 37H52V35H20V37Z"/>
+						<svg class="reviews-arrow" width="72" height="72" viewBox="0 0 72 72" fill="none">
+							<circle cx="36" cy="36" r="36" fill="#CC8B86" />
+							<path
+								d="M52.7071 36.7071C53.0976 36.3166 53.0976 35.6834 52.7071 35.2929L46.3431 28.9289C45.9526 28.5384 45.3195 28.5384 44.9289 28.9289C44.5384 29.3195 44.5384 29.9526 44.9289 30.3431L50.5858 36L44.9289 41.6569C44.5384 42.0474 44.5384 42.6805 44.9289 43.0711C45.3195 43.4616 45.9526 43.4616 46.3431 43.0711L52.7071 36.7071ZM20 37H52V35H20V37Z" />
 						</svg>
 					</a>
 				</div>
@@ -164,25 +202,30 @@
 
 	<footer class="footer" id="call_me">
 		<div class="footer-wrapper">
-			<div class="footer-content">
-				<h3 class="title footer-title">Оставить заявку</h3>
-				<p class="team-item-text footer-text">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
+			<div class="footer__content">
+				<h3 class="title footer__title">Оставить заявку</h3>
+				<p class="item-text footer-text">Оставьте свои контакты. Менеджер перезвонит в удобное вам время
+					и
+					ответит на все вопросы.</p>
 				<form action="#" class="form">
-					<input class="form-text" type="text" placeholder="Ваше имя" required>
-					<input class="form-name" type="phone" placeholder="Введите телефон" required>
+					<input class="form__name" type="text" placeholder="Ваше имя" required>
+					<input class="form__phone" type="phone" placeholder="Введите телефон" required>
 					<button class="button">Оставить заявку</button>
 				</form>
-			</div>	
+			</div>
 			<div class="map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.320894615967127!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1615643608740!5m2!1sen!2sru" width="590" height="620" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651568!2d30.320894615967127!3d59.938794181876276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya%20Konyushennaya%20St%2C%2019%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1615643608740!5m2!1sen!2sru"
+					width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 			</div>
 		</div>
 		<div class="footer-contacts">
-			<p class="team-item-text">+7 (981) 857-46-24</p>
-			<p class="team-item-text">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
-			<p class="team-item-text">ИП Королёва А.А.</p>
+			<p><a class="footer-phone item-text" href="tel:+79818574624">+7 (981) 857-46-24</a></p>
+			<p class="item-text">г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+			<p class="item-text">ИП Королёва А.А.</p>
 		</div>
 	</footer>
 
 </body>
+
 </html>
